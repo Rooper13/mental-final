@@ -1,0 +1,50 @@
+.main-content {
+    height: 540px !important;
+    box-shadow: 10px 6px 10px 0 rgba(0, 0, 0, 0.25);
+}
+
+.side-content {
+    height: 420px !important;
+}
+
+.mental-img {
+    box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, 0.25);
+    border-radius: 5px 50px 5px 50px;
+}
+
+.img-bg {
+    width: 100%;
+    height: auto;
+}
+
+.text-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.logo-content {
+    height: 600px !important;
+    width: 400px !important;
+    background-color: white;
+    border-radius: 30px;
+    box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.25);
+}
+
+.card-quote {
+    box-shadow: inset 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 5px 50px 5px 50px;
+    padding: 60px 160px 60px 160px;
+    background-color: #E3F5F9;
+}
+.card-quote-1 {
+    box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 5px 50px 5px 50px;
+}
+
+.quote-icon {
+    position: absolute;
+    bottom: 10%;
+    right: 5%;
+}

@@ -1,0 +1,15 @@
+.bg-blue-sec {
+    background-color: #EEF7FF !important;
+}
+
+.auth-form {
+    border: solid black 1px !important;
+    transition: 0.3s;
+}
+
+.auth-form:focus {
+    outline: none !important;
+    border-color: #6EC1E4 !important;
+    border: solid #6EC1E4 1px !important;
+    box-shadow: 0 0 2px #6EC1E4 !important;
+}
