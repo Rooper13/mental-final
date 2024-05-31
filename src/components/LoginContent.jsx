@@ -33,8 +33,8 @@ export default function LoginContent() {
                                             <Col>
                                                 <Form.Check type='checkbox' id='checkbox' label='Ingat saya' className='fs-7' />
                                             </Col>
-                                            <Col className='text-end fs-7 text-pr-blue'>
-                                                Lupa Kata Sandi?
+                                            <Col className='text-end fs-7'>
+                                                <Link to='/lupa-sandi' className='text-pr-blue text-decoration-none'>Lupa Kata Sandi?</Link>
                                             </Col>
                                         </Row>
                                         <Button2 text='Masuk' type='submit' />
