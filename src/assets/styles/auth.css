@@ -13,3 +13,11 @@
     border: solid #6EC1E4 1px !important;
     box-shadow: 0 0 2px #6EC1E4 !important;
 }
+
+.auth-body {
+    height: 600px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

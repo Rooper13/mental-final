@@ -11,7 +11,7 @@ import { Link } from 'react-router-dom'
 export default function LoginContent() {
     return (
         <>
-            <Container className='mt-6'>
+            <Container className=''>
                 <Card className='bg-blue-sec rounded-2'>
                     <Row>
                         <Col>

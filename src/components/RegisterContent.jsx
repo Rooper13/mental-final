@@ -12,7 +12,7 @@ export default function RegisterContent() {
     return (
         <>
 
-            <Container className='mt-5'>
+            <Container className=''>
                 <Card className='bg-blue-sec rounded-2'>
                     <Row>
                         <Col className='d-flex align-items-center ps-5 py-4'>
