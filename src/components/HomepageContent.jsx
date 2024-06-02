@@ -11,7 +11,7 @@ export default function HomepageContent() {
     return (
         <>
 
-            <div className='bac'>
+            <div>
                 <Card className="text-white rounded-0">
                     <Card.Img src="/images/bg-home-1.png" alt="Card image" className='rounded-0' />
                     <Card.ImgOverlay className='d-inline align-items-center pt-5'>
@@ -22,7 +22,7 @@ export default function HomepageContent() {
                                     Kesehatan bukan hanya tentang apa yang kamu makan. Ini tentang apa yang kamu pikirkan dan rasakan juga. Konsultasi sekarang juga secara gratis!
                                 </div>
                                 <div className='d-flex justify-content-center align-items-center mt-3'>
-                                    <Button1 textButton="KONSULTASI" />
+                                    <Button1 textButton="KONSULTASI" link='/konsultasi-online' />
                                 </div>
                             </Col>
                         </Row>

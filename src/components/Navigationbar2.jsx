@@ -1,9 +1,13 @@
 import React, { useEffect, useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import { Col, Row, Dropdown, DropdownButton, Image, Container } from 'react-bootstrap'
-import Button1 from './Button1'
 
-export default function Navigationbar() {
+import Button4 from './Button4'
+
+import '../assets/styles/index.css'
+import '../assets/styles/navbar.css'
+
+export default function Navigationbar2() {
     const navigate = useNavigate()
     const [activeRoute, setActiveRoute] = useState(window.location.pathname)
 
@@ -20,7 +24,7 @@ export default function Navigationbar() {
     const getButtonText = (route) => {
         if (route === '/') {
             return 'MASUK';
-        } else if (route === '/home') {
+        } else if (route === '/home' || route === '/konsultasi-online' || route === '/jadwal-dokter' || route === '/profil-website' || route === '/direktori-penyakit' || route === '/direktori-penyakit/1' || route === '/direktori-penyakit/2' || route === '/direktori-penyakit/3' || route === '/direktori-penyakit/4' || route === '/direktori-penyakit/5' || route === '/direktori-penyakit/6' || route === '/direktori-obat') {
             return 'KELUAR';
         } else {
             return '';
@@ -30,28 +34,27 @@ export default function Navigationbar() {
     const getLink = (route => {
         if (route === '/') {
             return '/masuk'
-        } else if (route === '/home') {
+        } else if (route === '/home' || route === '/konsultasi-online' || route === '/jadwal-dokter' || route === '/profil-website' || route === '/direktori-penyakit' || route === '/direktori-penyakit/1' || route === '/direktori-penyakit/2' || route === '/direktori-penyakit/3' || route === '/direktori-penyakit/4' || route === '/direktori-penyakit/5' || route === '/direktori-penyakit/6' || route === '/direktori-obat') {
             return '/'
         }
     })
-
     return (
         <>
             <div>
                 <Container fluid>
-                    <Row className='bg-white ps-3 pt-2 pb-2 pe-3'>
+                    <Row className='bg-pr-blue text-white ps-3 pt-2 pb-2 pe-3'>
                         <Col className='d-flex align-items-center'>
-                            <Image src='/images/logo.png' className='w-50' />
+                            <Image src='/images/logo-2.png' className='w-50' />
                         </Col>
                         <Col xl={6} className='d-flex align-items-center justify-content-center'>
                             <Col xl={2} className='d-flex justify-content-center align-items-center'>
-                                <Link to='/home' className='text-decoration-none text-black'>
+                                <Link to='/home' className='text-decoration-none text-white'>
                                     Beranda
                                 </Link>
                             </Col>
                             <Col xl={2} className='d-flex justify-content-center align-items-center'>
                                 <Dropdown>
-                                    <Dropdown.Toggle id="dropdown-basic" className='bg-transparent text-black border-0'>
+                                    <Dropdown.Toggle id="dropdown-basic" className='bg-transparent border-0'>
                                         Direktori
                                     </Dropdown.Toggle>
                                     <Dropdown.Menu>
@@ -61,13 +64,13 @@ export default function Navigationbar() {
                                 </Dropdown>
                             </Col>
                             <Col xl={3} className='d-flex justify-content-center align-items-center'>
-                                <Link to='/konsultasi-online' className='text-decoration-none text-black'>
+                                <Link to='/konsultasi-online' className='text-decoration-none text-white'>
                                     Konsultasi Online
                                 </Link>
                             </Col>
                             <Col xl={2} className='d-flex justify-content-center align-items-center'>
                                 <Dropdown>
-                                    <Dropdown.Toggle id="dropdown-basic" className='bg-transparent text-black border-0'>
+                                    <Dropdown.Toggle id="dropdown-basic" className='bg-transparent border-0'>
                                         Informasi
                                     </Dropdown.Toggle>
                                     <Dropdown.Menu>
@@ -78,7 +81,7 @@ export default function Navigationbar() {
                             </Col>
                         </Col>
                         <Col className='d-flex align-items-center justify-content-end'>
-                            <Button1 textButton={getButtonText(activeRoute)} link={getLink(activeRoute)} />
+                            <Button4 textButton={getButtonText(activeRoute)} link={getLink(activeRoute)} />
                         </Col>
                     </Row>
                 </Container>

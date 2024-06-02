@@ -8,7 +8,7 @@ export default function Homepage2() {
     return (
         <>
             <Navigationbar />
-            <HomepageContent />
+                <HomepageContent />
             <Footer />
         </>
     )
