@@ -1,6 +1,6 @@
- import React, { useState } from 'react'
+ import Homepage1 from './pages/Homepage1'
+import React, { useState } from 'react'
 import { Route, Routes, useLocation } from 'react-router-dom'
-import Homepage1 from './pages/Homepage1'
 import Homepage2 from './pages/Homepage2'
 import Login from './pages/Login'
 import Register from './pages/Register'
